@@ -6,9 +6,29 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   </head>
 
   <body>
+    <% if logged_in? %>
+      <%= form_tag '/session', method: :delete do %>
+      <input type="hidden" class="id" data-id=<%= current_user.id%> >
+    <nav class='header'>
+      <img class='header-img' src="http://i.imgur.com/wsYopvH.png?1">
+      <div class='welcome' >
+        Welcome,
+          <span>
+            <%= current_user.name %>!
+          </span>
+         <button>Logout</button>
+         <h1 class='title'>How Green Are You?</h1>
+      </div>
+      <button type="button" onclick="location.href='/home'">Home</button>
+    </nav>
+      <% end %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Point.destroy_all
+
+user1 = User.create(name: 'Marta', email: 'marta@gmail.com',password: '123', score: 0 );
+user2 = User.create(name: 'Sara', email: 'sara@gmail.com',password: '123', score: 0 );
+
+point = Point.create(q1: 1, q2: 2, q3: 3);
