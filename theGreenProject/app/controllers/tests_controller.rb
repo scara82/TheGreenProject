@@ -1,8 +1,8 @@
 class TestsController < ApplicationController
-  def test_self
+  def tself_test
   end
 
-  def test_self_result
+  def self_test_result
     @test_self = Test.new
     @test_self.user_id = session[:id]
     @test_self.tot = (params[:q1]).to_i +(params[:q2]).to_i + (params[:q3]).to_i
@@ -18,7 +18,7 @@ class TestsController < ApplicationController
       end
   end
 
-  def show
+  def self_test_show
     @score = Score.find(params[:id])
   end
 end

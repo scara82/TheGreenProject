@@ -1,18 +1,28 @@
 
-<div>
+<div class="login">
+
+  <div class='email'>
     <%= form_tag '/session', method: 'post' do %>
-    <br>
     <label>Email</label>
-    <br>
+  </div>
+  <div class="email-value">
     <input type="text" name="email" placeholder="username">
-    <br>
+  </div>
+
+  <div class="password">
     <label for="">Password</label>
-    <br>
+  </div>
+  <div class='password-value'>
     <input type="password" name="password" placeholder="password">
-    <br>
-    <br>
+  </div>
+
+  <div class="btn-login">
     <button >Login</button>
     <% end %>
-    <br>
-  <a href="/users/new">Signup</a>
+  </div>
+  
+  <div class='btn-signup'>
+    <a href="/users/new">Signup</a>
+  </div>
+
 </div>

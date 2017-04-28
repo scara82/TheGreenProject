@@ -1,3 +1,36 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-<!-- form action='/users' method='post' -->
+<div class="newAccount">
+
+  <p class='newTitle'>Create a new account!</p>
+  <div class="newName">
+    <form action="/users" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label class="">Name</label>
+  </div>
+  <div class='newName-value'>
+    <input type="text" name="name">
+  </div>
+
+  <div class="newEmail">
+    <label class="">Email</label>
+  </div>
+  <div class="newEmail-value">
+    <input type="text" name="email">
+  </div>
+
+  <div class="newPassword">
+    <label class="">Chose a password</label>
+  </div>
+  <div class="newPassword-value">
+    <input type="text" name="password">
+  </div>
+
+  <input type="hidden" name="score" value='0'>
+
+  <div class="account-btn">
+    <button>Create account</button>
+  </div>
+  <div class="back-btn">
+    <a href="/" class="">Back</a>
+  </div>
+    </form>
+</div>

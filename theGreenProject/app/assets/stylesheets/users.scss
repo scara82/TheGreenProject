@@ -1,3 +1,93 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.newAccount{
+  margin: 0 auto;
+  display: grid;
+  width: 400px;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 10px;
+  grid-row-gap: 20px;
+
+  font-family: 'Neucha', cursive;
+  color: rgb(42, 94, 50);
+  font-size: 25px;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 5%;
+}
+
+.newTitle{
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+  text-align: center;
+}
+
+.newName{
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  justify-self: right;
+}
+
+.newName-value{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.newEmail{
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: right;
+}
+
+.newEmail-value{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.newPassword{
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: right;
+}
+
+.newPassword-value{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.account-btn{
+  grid-column: 2;
+  grid-row: 5;
+}
+.account-btn button{
+  color: #fff;
+  background-color: rgb(66, 152, 92);
+  border: none;
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.back-btn{
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.back-btn a{
+  color: rgb(66, 152, 92);
+  font-size: 30px;
+}
+
+input{
+  border-radius: 15px;
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+}
