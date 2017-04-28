@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   post '/session', to: 'sessions#create'
   delete '/session', to: 'sessions#destroy'
 
-  get '/points/test_self', to: 'points#test_self'
-  post '/points/', to: 'points#test_self_result'
+  get '/tests/test_self', to: 'tests#test_self'
+  post '/tests/', to: 'tests#test_self_result'
+  get 'tests/test_self_tot', to: 'tests#test_self_tot'
 
   root 'sessions#new'
 

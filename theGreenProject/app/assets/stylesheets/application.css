@@ -22,6 +22,7 @@
 
 .header{
   display: grid;
+  width: 100%;
   grid-template-columns: auto 1fr;
   grid-template-rows: 150px;
   background-color: white;
