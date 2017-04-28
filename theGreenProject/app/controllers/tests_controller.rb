@@ -1,5 +1,5 @@
 class TestsController < ApplicationController
-  def tself_test
+  def self_test
   end
 
   def self_test_result
@@ -12,7 +12,7 @@ class TestsController < ApplicationController
     @score.Tot = @test_self.tot
       if @test_self.save && @score.save
         score_id = @score.id
-        redirect_to "/tests/show/#{score_id}"
+        redirect_to "/tests/self_test_show/#{score_id}"
       else
         redirect_to "/"
       end

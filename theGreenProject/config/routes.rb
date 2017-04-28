@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get '/tests/self_test', to: 'tests#self_test'
   post '/tests/', to: 'tests#self_test_result'
-  get 'tests/self_test_show/:id', to: 'tests#show'
+  get 'tests/self_test_show/:id', to: 'tests#self_test_show'
 
   root 'sessions#new'
 
