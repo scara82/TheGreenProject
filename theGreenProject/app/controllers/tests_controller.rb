@@ -11,13 +11,14 @@ class TestsController < ApplicationController
     @score.user_id = session[:id]
     @score.Tot = @test_self.tot
       if @test_self.save && @score.save
-        redirect_to '/tests/test_self_tot'
+        score_id = @score.id
+        redirect_to "/tests/show/#{score_id}"
       else
         redirect_to "/"
       end
   end
 
-  def test_self_tot
-    @score = Score.find_by(user_id: session[:id])
+  def show
+    @score = Score.find(params[:id])
   end
 end
