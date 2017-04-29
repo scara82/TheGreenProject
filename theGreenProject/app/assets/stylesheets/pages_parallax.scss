@@ -1,0 +1,71 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section.module:last-child{
+  margin-bottom: 0;
+}
+
+section.module h2{
+  margin-bottom: 40px;
+  font-family: 'Neucha', cursive;
+  font-size: 30px;
+}
+
+section.module p{
+  color:black;
+  font-size: 25px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+}
+
+section.module.content{
+  padding: 40px 0;
+  height: 700px;
+}
+
+section.module.parallax{
+  height: 800px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax h1{
+  color:black;
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+  opacity: .7;
+}
+
+section.module.parallax-1{
+  background-image: url(asset-path('nature.jpg'));
+}
+
+section.module.parallax-2{
+  background-image: url(asset-path('pine.jpg'));
+}
+
+section.module.parallax-3{
+  background-image: url(asset-path('dandelion.jpg'));
+}
+
+section.module.parallax-5{
+  background-image: url(asset-path('kids.jpg'));
+}
+
+section.module.parallax-4{
+  background-image: url(asset-path('bicycle.jpg'));
+}
