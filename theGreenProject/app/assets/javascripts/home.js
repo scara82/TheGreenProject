@@ -1,19 +1,15 @@
-(function(){
+window.onscroll = function() {scrollFunction()};
 
-  var parallax = document.querySelectorAll(".parallax"),
-      speed = 0.5;
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+  } else {
+      document.getElementById("myBtn").style.display = "none";
+  }
+}
 
-  window.onscroll = function(){
-    [].slice.call(parallax).forEach(function(el,i){
 
-      var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
-      el.style.backgroundPosition = elBackgrounPos;
-
-    });
-  };
-
-})();
-
-console.log('js on');
+function topFunction() {
+  document.body.scrollTop = 0; // For Chrome, Safari and Opera
+  document.documentElement.scrollTop = 0; // For IE and Firefox
+}

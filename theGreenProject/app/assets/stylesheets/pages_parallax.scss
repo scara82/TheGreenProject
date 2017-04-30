@@ -11,19 +11,37 @@ section.module:last-child{
 }
 
 section.module h2{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: 'Neucha', cursive;
   font-size: 30px;
+  padding-left: 10px;
+
+}
+
+div.content h2{
+  font-family: 'Neucha', cursive;
+  font-size: 30px;
+  text-align: left;
+}
+
+div.container h2{
+  color:rgb(217, 28, 45);
+  font-size: 48px;
+  line-height: 600px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px white;
 }
 
 section.module p{
   color:black;
   font-size: 25px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: left;
   text-shadow: 0 0 10px white;
+}
+
+section.module input{
+  width: 25px;
 }
 
 section.module.content{
@@ -40,7 +58,7 @@ section.module.parallax{
 }
 
 section.module.parallax h1{
-  color:black;
+  color:white;
   font-size: 48px;
   line-height: 600px;
   font-weight: 700;

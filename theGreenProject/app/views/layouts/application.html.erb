@@ -15,7 +15,9 @@
       <%= form_tag '/session', method: :delete do %>
       <input type="hidden" class="id" data-id=<%= current_user.id%> >
     <nav class='header'>
-      <img class='header-img' src="http://i.imgur.com/wsYopvH.png?1">
+      <div class="leaf">
+        <%= image_tag("leaf.png", :style => 'width: 120px;') %>
+      </div>
       <div class='welcome' >
         Welcome,
           <span>
