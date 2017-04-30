@@ -1,15 +1,33 @@
-window.onscroll = function() {scrollFunction()};
+$(function(){
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myBtn").style.display = "block";
-  } else {
-      document.getElementById("myBtn").style.display = "none";
-  }
-}
+	$(document).on( 'scroll', function(){
 
+		if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+	});
+});
 
-function topFunction() {
-  document.body.scrollTop = 0; // For Chrome, Safari and Opera
-  document.documentElement.scrollTop = 0; // For IE and Firefox
+$(function(){
+
+	$(document).on( 'scroll', function(){
+
+		if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+	});
+
+	$('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+	verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+	element = $('body');
+	offset = element.offset();
+	offsetTop = offset.top;
+	$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 }

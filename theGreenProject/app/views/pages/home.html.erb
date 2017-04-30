@@ -1,211 +1,214 @@
-<!-- <div class="wrapper"> -->
 
-  <section class='module parallax parallax-1'>
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-2x fa-arrow-circle-up"></i>
+	</span>
+</div>
+
+<section class='module parallax parallax-1'>
+  <div class='container'>
+    <h1>Choose your test!</h1>
+    <h2 style="line-height: 0">Test your selfcare</h2>
+  </div>
+</section>
+
+<section class="module content">
+  <div class='content test'>
+    <%= form_tag("/tests/self", method: "post") do %>
+    <%=hidden_field_tag :test_id, '1' %>
+      <h2>Q1: How many shower a day?</h2>
+        <p>
+          <%= radio_button_tag(:q1, "1") %>
+          <%= label_tag(:q1, "Once a day") %>
+          <br>
+          <%= radio_button_tag(:q1, "2") %>
+          <%= label_tag(:q1, "Twice a day") %>
+          <br>
+          <%= radio_button_tag(:q1, "3") %>
+          <%= label_tag(:q1, "Three times a day") %>
+        </p>
+        <br>
+        <h2>Q2: When you clean your teeth, do you let the water run?</h2>
+        <p>
+          <%= radio_button_tag(:q2, "1") %>
+          <%= label_tag(:q2, "Not") %>
+          <br>
+          <%= radio_button_tag(:q2, "2") %>
+          <%= label_tag(:q2, "Yes") %>
+          <br>
+        </p>
+        <br>
+        <h2>Q3: How many times do you re-use the plastic bags shops give you?</h2>
+        <p>
+          <%= radio_button_tag(:q3, "1") %>
+          <%= label_tag(:q3, "Once, maybe") %>
+          <br>
+          <%= radio_button_tag(:q3, "2") %>
+          <%= label_tag(:q3, "Several times") %>
+          <br>
+          <%= radio_button_tag(:q3, "3") %>
+          <%= label_tag(:q3, " I never take them; I always use my own bag.") %>
+          <br>
+        </p>
+          <%= submit_tag "Submit", :id=> 'sub-btn' %>
+        <% end %>
+  </div>
+</section>
+
+<section class='module parallax parallax-2'>
+  <div class='container'>
+    <h2>Test how green are your house chores</h2>
+  </div>
+</section>
+<section class="module content">
+  <div class='content test home'>
+    <%= form_tag("/tests/home", method: "post") do %>
+      <%=hidden_field_tag :test_id, '2' %>
+      <h2>Q1: Do you have LED light?</h2>
+        <p>
+          <%= radio_button_tag(:q4, "1") %>
+          <%= label_tag(:q4, "No") %>
+          <br>
+          <%= radio_button_tag(:q4, "2") %>
+          <%= label_tag(:q4, "Yes") %>
+        </p>
+        <br>
+        <h2>Q2: Do you switch off the ligth from an empty room?</h2>
+        <p>
+          <%= radio_button_tag(:q5, "1") %>
+          <%= label_tag(:q5, "No") %>
+          <br>
+          <%= radio_button_tag(:q5, "2") %>
+          <%= label_tag(:q5, "Yes") %>
+          <br>
+        </p>
+        <br>
+        <h2>Q3: How many times do you re-use the plastic bags shops give you?</h2>
+        <p>
+          <%= radio_button_tag(:q6, "1") %>
+          <%= label_tag(:q6, "Once, maybe") %>
+          <br>
+          <%= radio_button_tag(:q6, "2") %>
+          <%= label_tag(:q6, "Several times") %>
+          <br>
+          <%= radio_button_tag(:q6, "3") %>
+          <%= label_tag(:q6, " I never take them; I always use my own bag.") %>
+          <br>
+        </p>
+          <%= submit_tag "Submit", :id=> 'sub-btn' %>
+    <% end %>
+  </div>
+</section>
+
+<section class='module parallax parallax-3'>
+  <div class='container'>
+    <h2>Your products</h2>
+  </div>
+</section>
+<section class="module content">
+  <div class='content test prod'>
+    <%= form_tag("/tests/prod", method: "post") do %>
+      <%=hidden_field_tag :test_id, '3' %>
+      <h2>Q1: Do you use spray products(deodorant, hairspray,..)?</h2>
+        <p>
+          <%= radio_button_tag(:q7, "1") %>
+          <%= label_tag(:q7, "Yes") %>
+          <br>
+          <%= radio_button_tag(:q7, "2") %>
+          <%= label_tag(:q7, "No") %>
+          <br>
+          <%= radio_button_tag(:q7, "3") %>
+          <%= label_tag(:q7, "Are you crazy?? Have you ever heard of the Ozone hole??") %>
+        </p>
+        <br>
+        <h2>Q2: If you need to disinfect your floor:</h2>
+        <p>
+          <%= radio_button_tag(:q8, "1") %>
+          <%= label_tag(:q8, "Bleach will kill all the germs!") %>
+          <br>
+          <%= radio_button_tag(:q8, "2") %>
+          <%= label_tag(:q8, "Hot water is a good ally") %>
+          <br>
+          <%= radio_button_tag(:q8, "3") %>
+          <%= label_tag(:q8, "White vinegar and baking soda is magic!" ) %>
+        </p>
+        <br>
+        <!-- <h2>Q3: </h2>
+        <p>
+          <%= radio_button_tag(:q9, "1") %>
+          <%= label_tag(:q9, "I don't trust them. One day. Maybe") %>
+          <br>
+          <%= radio_button_tag(:q9, "2") %>
+          <%= label_tag(:q9, "What's about it??") %>
+          <br>
+          <%= radio_button_tag(:q9, "3") %>
+          <%= label_tag(:q9, "They are so cool! I will buy one for sure!") %>
+          <br> -->
+        </p>
+          <%= submit_tag "Submit", :id=> 'sub-btn' %>
+    <% end %>
+  </div>
+</section>
+
+<section class='module parallax parallax-4'>
+  <div class='container'>
+    <h2>Test your way to move around!</h2>
+  </div>
+</section>
+
+<section class="module content">
+  <div class='content test transp'>
+    <%= form_tag("/tests/transp", method: "post") do %>
+      <%=hidden_field_tag :test_id, '3' %>
+      <h2>Q1: How do you go at work/school?</h2>
+        <p>
+          <%= radio_button_tag(:q10, "1") %>
+          <%= label_tag(:q10, "Car") %>
+          <br>
+          <%= radio_button_tag(:q10, "2") %>
+          <%= label_tag(:q10, "Tram") %>
+          <br>
+          <%= radio_button_tag(:q10, "3") %>
+          <%= label_tag(:q10, "Bike") %>
+        </p>
+        <br>
+        <h2>Q2: If you are going out with your friends:</h2>
+        <p>
+          <%= radio_button_tag(:q11, "1") %>
+          <%= label_tag(:q11, "I take my car") %>
+          <br>
+          <%= radio_button_tag(:q11, "2") %>
+          <%= label_tag(:q11, "I try to share the car with some of them") %>
+          <br>
+          <%= radio_button_tag(:q11, "3") %>
+          <%= label_tag(:q11, "I catch a tram" ) %>
+        </p>
+        <br>
+        <h2>Q3: What do you think about electriv car?</h2>
+        <p>
+          <%= radio_button_tag(:q12, "1") %>
+          <%= label_tag(:q12, "I don't trust them. One day. Maybe") %>
+          <br>
+          <%= radio_button_tag(:q12, "2") %>
+          <%= label_tag(:q12, "What's about it??") %>
+          <br>
+          <%= radio_button_tag(:q12, "3") %>
+          <%= label_tag(:q12, "They are so cool! I will buy one for sure!") %>
+          <br>
+        </p>
+          <%= submit_tag "Submit", :id=> 'sub-btn' %>
+    <% end %>
+  </div>
+
+</section>  <section class='module parallax parallax-5'>
     <div class='container'>
-      <h1>Choose your test!</h1>
-      <h2 style="line-height: 0">Test your selfcare</h2>
+      <h2>Teach your kids to be green!</h2>
     </div>
   </section>
 
-  <section class="module content">
-    <div class='content test'>
-      <%= form_tag("/tests/self", method: "post") do %>
-      <%=hidden_field_tag :test_id, '1' %>
-        <h2>Q1: How many shower a day?</h2>
-          <p>
-            <%= radio_button_tag(:q1, "1") %>
-            <%= label_tag(:q1, "Once a day") %>
-            <br>
-            <%= radio_button_tag(:q1, "2") %>
-            <%= label_tag(:q1, "Twice a day") %>
-            <br>
-            <%= radio_button_tag(:q1, "3") %>
-            <%= label_tag(:q1, "Three times a day") %>
-          </p>
-          <br>
-          <h2>Q2: When you clean your teeth, do you let the water run?</h2>
-          <p>
-            <%= radio_button_tag(:q2, "1") %>
-            <%= label_tag(:q2, "Not") %>
-            <br>
-            <%= radio_button_tag(:q2, "2") %>
-            <%= label_tag(:q2, "Yes") %>
-            <br>
-          </p>
-          <br>
-          <h2>Q3: How many times do you re-use the plastic bags shops give you?</h2>
-          <p>
-            <%= radio_button_tag(:q3, "1") %>
-            <%= label_tag(:q3, "Once, maybe") %>
-            <br>
-            <%= radio_button_tag(:q3, "2") %>
-            <%= label_tag(:q3, "Several times") %>
-            <br>
-            <%= radio_button_tag(:q3, "3") %>
-            <%= label_tag(:q3, " I never take them; I always use my own bag.") %>
-            <br>
-          </p>
-            <%= submit_tag "Submit", :id=> 'sub-btn' %>
-          <% end %>
-    </div>
-  </section>
 
-  <section class='module parallax parallax-2'>
-    <div class='container'>
-      <h2>Test how green are your house chores</h2>
-    </div>
-  </section>
-  <section class="module content">
-    <div class='content test home'>
-      <%= form_tag("/tests/home", method: "post") do %>
-        <%=hidden_field_tag :test_id, '2' %>
-        <h2>Q1: Do you have LED light?</h2>
-          <p>
-            <%= radio_button_tag(:q4, "1") %>
-            <%= label_tag(:q4, "No") %>
-            <br>
-            <%= radio_button_tag(:q4, "2") %>
-            <%= label_tag(:q4, "Yes") %>
-          </p>
-          <br>
-          <h2>Q2: Do you switch off the ligth from an empty room?</h2>
-          <p>
-            <%= radio_button_tag(:q5, "1") %>
-            <%= label_tag(:q5, "No") %>
-            <br>
-            <%= radio_button_tag(:q5, "2") %>
-            <%= label_tag(:q5, "Yes") %>
-            <br>
-          </p>
-          <br>
-          <h2>Q3: How many times do you re-use the plastic bags shops give you?</h2>
-          <p>
-            <%= radio_button_tag(:q6, "1") %>
-            <%= label_tag(:q6, "Once, maybe") %>
-            <br>
-            <%= radio_button_tag(:q6, "2") %>
-            <%= label_tag(:q6, "Several times") %>
-            <br>
-            <%= radio_button_tag(:q6, "3") %>
-            <%= label_tag(:q6, " I never take them; I always use my own bag.") %>
-            <br>
-          </p>
-            <%= submit_tag "Submit", :id=> 'sub-btn' %>
-      <% end %>
-    </div>
-  </section>
-
-  <section class='module parallax parallax-3'>
-    <div class='container'>
-      <h2>Your products</h2>
-    </div>
-  </section>
-  <section class="module content">
-    <div class='content test prod'>
-      <%= form_tag("/tests/prod", method: "post") do %>
-        <%=hidden_field_tag :test_id, '3' %>
-        <h2>Q1: Do you use spray products(deodorant, hairspray,..)?</h2>
-          <p>
-            <%= radio_button_tag(:q7, "1") %>
-            <%= label_tag(:q7, "Yes") %>
-            <br>
-            <%= radio_button_tag(:q7, "2") %>
-            <%= label_tag(:q7, "No") %>
-            <br>
-            <%= radio_button_tag(:q7, "3") %>
-            <%= label_tag(:q7, "Are you crazy?? Have you ever heard of the Ozone hole??") %>
-          </p>
-          <br>
-          <h2>Q2: If you need to disinfect your floor:</h2>
-          <p>
-            <%= radio_button_tag(:q8, "1") %>
-            <%= label_tag(:q8, "Bleach will kill all the germs!") %>
-            <br>
-            <%= radio_button_tag(:q8, "2") %>
-            <%= label_tag(:q8, "Hot water is a good ally") %>
-            <br>
-            <%= radio_button_tag(:q8, "3") %>
-            <%= label_tag(:q8, "White vinegar and baking soda is magic!" ) %>
-          </p>
-          <br>
-          <!-- <h2>Q3: </h2>
-          <p>
-            <%= radio_button_tag(:q9, "1") %>
-            <%= label_tag(:q9, "I don't trust them. One day. Maybe") %>
-            <br>
-            <%= radio_button_tag(:q9, "2") %>
-            <%= label_tag(:q9, "What's about it??") %>
-            <br>
-            <%= radio_button_tag(:q9, "3") %>
-            <%= label_tag(:q9, "They are so cool! I will buy one for sure!") %>
-            <br> -->
-          </p>
-            <%= submit_tag "Submit", :id=> 'sub-btn' %>
-      <% end %>
-    </div>
-  </section>
-
-  <section class='module parallax parallax-4'>
-    <div class='container'>
-      <h2>Test your way to move around!</h2>
-    </div>
-  </section>
-
-  <section class="module content">
-    <div class='content test transp'>
-      <%= form_tag("/tests/transp", method: "post") do %>
-        <%=hidden_field_tag :test_id, '3' %>
-        <h2>Q1: How do you go at work/school?</h2>
-          <p>
-            <%= radio_button_tag(:q10, "1") %>
-            <%= label_tag(:q10, "Car") %>
-            <br>
-            <%= radio_button_tag(:q10, "2") %>
-            <%= label_tag(:q10, "Tram") %>
-            <br>
-            <%= radio_button_tag(:q10, "3") %>
-            <%= label_tag(:q10, "Bike") %>
-          </p>
-          <br>
-          <h2>Q2: If you are going out with your friends:</h2>
-          <p>
-            <%= radio_button_tag(:q11, "1") %>
-            <%= label_tag(:q11, "I take my car") %>
-            <br>
-            <%= radio_button_tag(:q11, "2") %>
-            <%= label_tag(:q11, "I try to share the car with some of them") %>
-            <br>
-            <%= radio_button_tag(:q11, "3") %>
-            <%= label_tag(:q11, "I catch a tram" ) %>
-          </p>
-          <br>
-          <h2>Q3: What do you think about electriv car?</h2>
-          <p>
-            <%= radio_button_tag(:q12, "1") %>
-            <%= label_tag(:q12, "I don't trust them. One day. Maybe") %>
-            <br>
-            <%= radio_button_tag(:q12, "2") %>
-            <%= label_tag(:q12, "What's about it??") %>
-            <br>
-            <%= radio_button_tag(:q12, "3") %>
-            <%= label_tag(:q12, "They are so cool! I will buy one for sure!") %>
-            <br>
-          </p>
-            <%= submit_tag "Submit", :id=> 'sub-btn' %>
-      <% end %>
-    </div>
-
-  </section>  <section class='module parallax parallax-5'>
-      <div class='container'>
-        <h2>Teach your kids to be green!</h2>
-      </div>
-    </section>
-
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">	&uarr;</button>
-  <!-- <div class='suggestions'>
-    What you can do:
-  </div> -->
-  <!-- <img class='suggestion1 img' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg" alt="">
-  <img class='suggestion2 img' src="http://3.bp.blogspot.com/-idFHK-Q3yQY/UbCLd6eZCLI/AAAAAAAAAFA/toz9oRBK31I/s1600/click2.jpg"> -->
-<!-- </div> -->
+<!-- <div class='suggestions'>
+  What you can do:
+</div> -->
+<!-- <img class='suggestion1 img' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg" alt="">
+<img class='suggestion2 img' src="http://3.bp.blogspot.com/-idFHK-Q3yQY/UbCLd6eZCLI/AAAAAAAAAFA/toz9oRBK31I/s1600/click2.jpg"> -->
