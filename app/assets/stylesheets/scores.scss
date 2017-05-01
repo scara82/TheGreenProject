@@ -1,8 +1,125 @@
 // Place all the styles related to the point controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.suggestion-img{
-  width: 40%;
-  margin: 15px;
-  border: 1px black solid;
+
+.scores-wrapper{
+  margin: 0 auto;
+  display: grid;
+  height: auto;
+  width: 90%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px repeat(6, auto) 200px;
+  grid-gap: 5px;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  color: rgb(42, 94, 50);
+  font-size: 15px;
+}
+
+.scores-title{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+.scores-self{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+.scores-house{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+.scores-prod{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+.scores-transp{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 5;
+  grid-row-end: span 1;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+.scores-tot{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 6;
+  grid-row-end: span 1;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+.suggestion-img1{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.suggestion-img2{
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.suggestion-img3{
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 4;
+  grid-row-end: span 7;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.suggestion-img4{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 4;
+  grid-row-end: span 7;
+  padding-right: 15px;
+  width: 100%;
 }
