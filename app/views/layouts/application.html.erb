@@ -25,9 +25,9 @@
             Welcome,
               <span>
                 <%= current_user.name %>!
+              </span>
             <% end %>
           <% end %>
-              </span>
           <%= link_to "logout", {:controller=> "sessions", :action=> "destroy"}, :class=> 'logout-btn' %>
         </div>
 
