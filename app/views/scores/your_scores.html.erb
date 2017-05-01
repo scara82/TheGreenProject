@@ -25,10 +25,10 @@
 
     <div class="scores-prod">
       <% if @your_scores_prod.last.Tot %>
-      <h2>Your Last Score for Products test</h2>
-      <h2> of the <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %> is: </h2>
-      <h1><%= tot3 = @your_scores_prod.last.Tot %></h1>
-      (<%= @your_scores_prod[-1].Tot %> was the previuos one )
+        <h2>Your Last Score for Products test</h2>
+        <h2> of the <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %> is: </h2>
+        <h1><%= tot3 = @your_scores_prod.last.Tot %></h1>
+        (<%= @your_scores_prod[-1].Tot %> was the previuos one )
       <% end %>
     </div>
 
