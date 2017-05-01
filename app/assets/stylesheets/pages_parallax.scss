@@ -69,6 +69,9 @@ section.module.parallax h1{
   opacity: .7;
 }
 
+.parallax-5 a{
+  text-decoration: none !important;
+}
 section.module.parallax-1{
   background-image: url(asset-path('nature.jpg'));
 }

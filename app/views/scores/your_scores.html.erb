@@ -1,47 +1,54 @@
-<div class="scores-wrapper">
-  <h1 class="scores-title">Your scores are:</h1>
+<body class="scores">
 
-  <div class="scores-self">
-    <h2>Your Last Score for Self test on the <%= @your_scores_self.last.created_at.strftime("%d %b. %Y") %> is: </h2>
-    <% if @your_scores_self.last.Tot %>
-      <%= tot1 = @your_scores_self.last.Tot %>
-      <br>
-      (<%= @your_scores_self[-1].Tot %> was the previuos one )
-    <% end %>
-  </div>
+  <div class="scores-wrapper">
+    <div class="scores-title">
+        <h1>Your scores are:</h1>
+    </div>
 
-  <div class="scores-house">
-    <h2>Your Last Score for House test on the <%= @your_scores_house.last.created_at.strftime("%d %b. %Y") %> is: </h2>
-    <% if @your_scores_house.last.Tot %>
-      <%= tot2 = @your_scores_house.last.Tot %>
-      <br>
-      (<%= @your_scores_house[-1].Tot %> was the previuos one )
-    <% end %>
-  </div>
+    <div class="scores-self">
+      <% if @your_scores_self.last.Tot %>
+        <h2>Your Last Score for Self test </h2>
+        <h2> of the <%= @your_scores_self.last.created_at.strftime("%d %b. %Y") %> is: </h2>
+        <h1><%= tot1 = @your_scores_self.last.Tot %></h1>
+        (<%= @your_scores_self[-1].Tot %> was the previuos one )
+      <% end %>
+    </div>
 
-  <div class="scores-prod">
-    <% if @your_scores_prod.last.Tot %>
-    <h2>Your Last Score for Products test on the <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %> is: </h2>
-      <%= tot3 = @your_scores_prod.last.Tot %>
+    <div class="scores-house">
+      <% if @your_scores_house.last.Tot %>
+        <h2>Your Last Score for House test</h2>
+        <h2> of the <%= @your_scores_house.last.created_at.strftime("%d %b. %Y") %> is: </h2>
+        <h1><%= tot2 = @your_scores_house.last.Tot %></h1>
+        (<%= @your_scores_house[-1].Tot %> was the previuos one )
+      <% end %>
+    </div>
+
+    <div class="scores-prod">
+      <% if @your_scores_prod.last.Tot %>
+      <h2>Your Last Score for Products test</h2>
+      <h2> of the <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %> is: </h2>
+      <h1><%= tot3 = @your_scores_prod.last.Tot %></h1>
       (<%= @your_scores_prod[-1].Tot %> was the previuos one )
-    <% end %>
-  </div>
+      <% end %>
+    </div>
 
-  <div class="scores-transp">
-    <% if @your_scores_transp.last.Tot %>
-    <h2>Your Last Score for Transportation test on the <%= @your_scores_transp.last.created_at.strftime("%d %b. %Y") %> is: </h2>
-      <%= tot4 = @your_scores_transp.last.Tot %>
-      (<%= @your_scores_transp[-1].Tot %> was the previuos one )
-    <% end %>
-  </div>
+    <div class="scores-transp">
+      <% if @your_scores_transp.last.Tot %>
+        <h2>Your Last Score for Transportation test</h2>
+        <h2> of the <%= @your_scores_transp.last.created_at.strftime("%d %b. %Y") %> is: </h2>
+        <h1><%= tot4 = @your_scores_transp.last.Tot %></h1>
+        (<%= @your_scores_transp[-1].Tot %> was the previuos one )
+      <% end %>
+    </div>
 
-  <div class="scores-tot">
-    <h2>Your total score is:</h2>
-    <%= tot1+tot2+tot3+tot4 %>
-  </div>
+    <div class="scores-tot">
+      <h2>Your total score is:</h2>
+        <h1><%= tot1+tot2+tot3+tot4 %></h1>
+    </div>
 
-    <img class='suggestion-img1' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg" alt="">
-    <img class='suggestion-img2' src="http://3.bp.blogspot.com/-idFHK-Q3yQY/UbCLd6eZCLI/AAAAAAAAAFA/toz9oRBK31I/s1600/click2.jpg">
-    <%= image_tag "save.jpg", class: "suggestion-img3"%>
-    <%= image_tag "saveWater.jpg", class: "suggestion-img4"%>
-</div>
+      <img class='suggestion-img1' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg" alt="">
+      <img class='suggestion-img2' src="http://3.bp.blogspot.com/-idFHK-Q3yQY/UbCLd6eZCLI/AAAAAAAAAFA/toz9oRBK31I/s1600/click2.jpg">
+      <%= image_tag "save.jpg", class: "suggestion-img3"%>
+      <%= image_tag "saveWater.jpg", class: "suggestion-img4"%>
+  </div>
+</body>
