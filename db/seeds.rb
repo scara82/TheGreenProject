@@ -9,3 +9,5 @@ User.destroy_all
 
 user1 = User.create(name: 'Marta', email: 'marta@gmail.com',password: '123', score: 0 );
 user2 = User.create(name: 'Sara', email: 'sara@gmail.com',password: '123', score: 0 );
+
+score1 = Score.create(user_id: '1', test_id: "1", Tot: '0');

@@ -11,6 +11,8 @@
         <h2> of the <%= @your_scores_self.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot1 = @your_scores_self.last.Tot %></h1>
         (<%= @your_scores_self[-1].Tot %> was the previuos one )
+      <% else %>
+        <h2>You don't have score for this test jet!</h2>
       <% end %>
     </div>
 
@@ -20,6 +22,8 @@
         <h2> of the <%= @your_scores_house.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot2 = @your_scores_house.last.Tot %></h1>
         (<%= @your_scores_house[-1].Tot %> was the previuos one )
+      <% else %>
+        <h2>You don't have score for this test jet!</h2>
       <% end %>
     </div>
 
@@ -29,6 +33,8 @@
         <h2> of the <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot2 = @your_scores_prod.last.Tot %></h1>
         (<%= @your_scores_prod[-1].Tot %> was the previuos one )
+      <% else %>
+        <h2>You don't have score for this test jet!</h2>
       <% end %>
     </div>
 
@@ -38,6 +44,8 @@
         <h2> of the <%= @your_scores_transp.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot4 = @your_scores_transp.last.Tot %></h1>
         (<%= @your_scores_transp[-1].Tot %> was the previuos one )
+      <% else %>
+        <h2>You don't have score for this test jet!</h2>
       <% end %>
     </div>
 
