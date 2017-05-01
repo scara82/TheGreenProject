@@ -6,57 +6,67 @@
     </div>
 
     <div class="scores-self">
-      <% if @your_scores_self.last.Tot %>
+      <% if @your_scores_self.last != nil  %>
         <h2>Your Last Score for Self test </h2>
         <h2> of the <%= @your_scores_self.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot1 = @your_scores_self.last.Tot %></h1>
         (<%= @your_scores_self[-1].Tot %> was the previuos one )
       <% else %>
-        <h2>You don't have score for this test jet!</h2>
+      <% tot1 = 0 %>
+        <h2>You don't have score for self test jet!</h2>
       <% end %>
     </div>
 
     <div class="scores-house">
-      <% if @your_scores_house.last.Tot %>
+      <% if @your_scores_house.last  !=nil %>
         <h2>Your Last Score for House test</h2>
         <h2> of the <%= @your_scores_house.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot2 = @your_scores_house.last.Tot %></h1>
         (<%= @your_scores_house[-1].Tot %> was the previuos one )
       <% else %>
-        <h2>You don't have score for this test jet!</h2>
+      <% tot2 = 0 %>
+        <h2>You don't have score for house chores test jet!</h2>
       <% end %>
     </div>
 
     <div class="scores-prod">
-      <% if @your_scores_prod.last.Tot %>
+      <% if @your_scores_prod.last != nil%>
         <h2>Your Last Score for your Products test</h2>
         <h2> of the <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot3 = @your_scores_prod.last.Tot %></h1>
         (<%= @your_scores_prod[-1].Tot %> was the previuos one )
       <% else %>
-        <h2>You don't have score for this test jet!</h2>
+      <% tot3 = 0 %>
+        <h2>You don't have score for your products test jet!</h2>
       <% end %>
     </div>
 
     <div class="scores-transp">
-      <% if @your_scores_transp.last.Tot %>
+      <% if @your_scores_transp.last != nil %>
         <h2>Your Last Score for Transportation test</h2>
         <h2> of the <%= @your_scores_transp.last.created_at.strftime("%d %b. %Y") %> is: </h2>
         <h1><%= tot4 = @your_scores_transp.last.Tot %></h1>
         (<%= @your_scores_transp[-1].Tot %> was the previuos one )
       <% else %>
-        <h2>You don't have score for this test jet!</h2>
+        <% tot4 = 0 %>
+        <h2>You don't have score for transportation test jet!</h2>
       <% end %>
     </div>
 
     <div class="scores-tot">
-      <h2>Your total score is:</h2>
-        <h1><%= tot1+tot2+tot3+tot4 %></h1>
+      <% tot = tot1+tot2+tot3+tot4 %>
+      <% if tot = 0 %>
+        <h2>You haven't done any test yet!</h2>
+      <% else %>
+        <h2>Your total score is:</h2>
+        <h1><%= tot %></h1>
+      <% end %>
     </div>
 
-      <img class='suggestion-img1' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg" alt="">
+      <img class='suggestion-img1' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg">
       <img class='suggestion-img2' src="http://3.bp.blogspot.com/-idFHK-Q3yQY/UbCLd6eZCLI/AAAAAAAAAFA/toz9oRBK31I/s1600/click2.jpg">
       <%= image_tag "save.jpg", class: "suggestion-img3"%>
       <%= image_tag "saveWater.jpg", class: "suggestion-img4"%>
+
   </div>
 </body>
