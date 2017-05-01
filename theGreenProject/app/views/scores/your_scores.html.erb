@@ -1,0 +1,45 @@
+<h1>Your overall scores are:</h1>
+<br><br>
+
+<h2>Your Last Score for Self test is: </h2>
+<% if @your_scores_self.last.Tot %>
+  <%= tot1 = @your_scores_self.last.Tot %>
+  (test took on the
+  <%= @your_scores_self.last.created_at.strftime("%d %b. %Y") %>
+  )
+<% end %>
+
+<br><br>
+
+<h2>Your Last Score for House test is: </h2>
+<% if @your_scores_house.last.Tot %>
+  <%= tot2 = @your_scores_house.last.Tot %>
+  (test took on the
+  <%= @your_scores_house.last.created_at.strftime("%d %b. %Y") %>
+  )
+<% end %>
+
+<br><br>
+
+<% if @your_scores_prod.last.Tot %>
+<h2>Your Last Score for Products test is: </h2>
+  <%= tot3 = @your_scores_prod.last.Tot %>
+  (test took on the
+  <%= @your_scores_prod.last.created_at.strftime("%d %b. %Y") %>
+  )
+<% end %>
+
+<br><br>
+
+<% if @your_scores_transp.last.Tot %>
+<h2>Your Last Score for Transportation test is: </h2>
+  <%= tot4 = @your_scores_transp.last.Tot %>
+  (test took on the
+  <%= @your_scores_transp.last.created_at.strftime("%d %b. %Y") %>
+  )
+<% end %>
+
+<br><br>
+
+<h2>Your total score is:</h2>
+<%= tot1+tot2+tot3+tot4 %>

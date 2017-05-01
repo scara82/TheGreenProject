@@ -17,8 +17,9 @@ Rails.application.routes.draw do
   post '/tests/transp', to: 'tests#transp_test_result'
   post '/tests/prod', to: 'tests#prod_test_result'
 
-
   get 'tests/self_test_show/:id', to: 'tests#self_test_show'
+
+  get '/scores/your_scores', to: 'scores#your_scores'
 
   root 'sessions#new'
 

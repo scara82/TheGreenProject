@@ -14,4 +14,12 @@ class ScoresController < ApplicationController
         redirect_to "/"
       end
   end
+
+  def your_scores
+    @your_scores_self = Score.where(user_id: session[:id], test_id: "1")
+    @your_scores_house = Score.where(user_id: session[:id], test_id: "2")
+    @your_scores_prod = Score.where(user_id: session[:id], test_id: "3")
+    @your_scores_transp = Score.where(user_id: session[:id], test_id: "4")
+
+  end
 end

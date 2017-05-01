@@ -1,0 +1,87 @@
+.header-container{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 150px auto 250px;
+  grid-template-rows: repeat(2, 60px) 30px;
+  font-family: 'Neucha', cursive;
+  color: rgb(42, 94, 50);
+}
+
+.leaf{
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  font-size: 20px;
+  // border: 1px solid black;
+  justify-self: start;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.welcome{
+  grid-column-start: 2;
+  grid-row: 1;
+  font-size: 20px;
+  // border: 1px solid black;
+  margin-left: 5px;
+}
+
+.home-title{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 20px;
+  // border: 1px solid black;
+  margin-left: 5px;
+}
+
+.score{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  font-size: 20px;
+  // border: 1px solid black;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.team{
+  grid-column-start: 3;
+  grid-row-start: 2;
+  font-size: 20px;
+  // border: 1px solid black;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.home-btn{
+  grid-column-start: 3;
+  grid-row-start: 3;
+  // border: 1px solid black;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.team-btn, .score-btn {
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+  background-color: rgb(99, 221, 33);
+  color: #333333;
+  padding: 10px 20px 10px 20px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 10px;
+}
+
+.home-btn-style{
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+  background-color: rgb(99, 221, 33);
+  color: #333333;
+  padding: 5px 15px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 10px;
+}
