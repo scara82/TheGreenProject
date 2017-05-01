@@ -7,6 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 
-
 user1 = User.create(name: 'Marta', email: 'marta@gmail.com',password: '123', score: 0 );
 user2 = User.create(name: 'Sara', email: 'sara@gmail.com',password: '123', score: 0 );

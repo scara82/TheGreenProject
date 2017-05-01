@@ -73,7 +73,7 @@
   border-radius: 10px;
 }
 
-.home-btn-style{
+.home-btn-style {
   font-family: 'Neucha', cursive;
   text-decoration: none;
   background-color: rgb(99, 221, 33);
@@ -84,4 +84,18 @@
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   border-radius: 10px;
+}
+
+.logout-btn {
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+  background-color: rgb(99, 221, 33);
+  color: #333333;
+  padding: 5px 5px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 10px;
+  font-size: 15px;
 }

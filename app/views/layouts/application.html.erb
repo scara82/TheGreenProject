@@ -11,41 +11,42 @@
   </head>
 
   <body>
-    <div class="header-container">
+    <nav>
+      <div class="header-container">
 
-      <div class="leaf">
-        <%= image_tag("leaf.png", :style => 'width: 100px;') %>
-      </div>
+        <div class="leaf">
+          <%= image_tag("leaf.png", :style => 'width: 100px;') %>
+        </div>
 
-      <div class='welcome' >
-        <% if logged_in? %>
-          <%= form_tag '/session', method: :delete do %>
-          <input type="hidden" class="id" data-id=<%= current_user.id%> >
-          Welcome,
-            <span>
-              <%= current_user.name %>!
+        <div class='welcome' >
+          <% if logged_in? %>
+            <%= form_tag '/session', method: :delete do %>
+            <input type="hidden" class="id" data-id=<%= current_user.id%> >
+            Welcome,
+              <span>
+                <%= current_user.name %>!
+            <% end %>
           <% end %>
-        <% end %>
-            </span>
-           <button>Logout</button>
-      </div>
+              </span>
+          <%= link_to "logout", {:controller=> "sessions", :action=> "destroy"}, :class=> 'logout-btn' %>
+        </div>
 
-      <div class="home-title">
-        <h1 class='title'>How Green Are You?</h1>
-      </div>
+        <div class="home-title">
+          <h1 class='title'>How Green Are You?</h1>
+        </div>
 
-      <div class="score">
-        <a href="/scores/your_scores" class="score-btn">Your Scores!</a>
-      </div>
+        <div class="score">
+          <a href="/scores/your_scores" class="score-btn">Your Scores!</a>
+        </div>
 
-      <div class="team">
-        <a href="#" class="team-btn">Your Team Scores!</a>
-      </div>
+        <div class="team">
+          <a href="#" class="team-btn">Your Team Scores!</a>
+        </div>
 
-      <div class="home-btn">
-        <a href="/home" class="home-btn-style">Home</a>
-      </div>
-
+        <div class="home-btn">
+          <a href="/home" class="home-btn-style">Home</a>
+        </div>
+  </nav>
     </div>
 
     <%= yield %>
