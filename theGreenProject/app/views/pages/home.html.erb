@@ -64,7 +64,7 @@
   <div class='content test home'>
     <%= form_tag("/tests/home", method: "post") do %>
       <%=hidden_field_tag :test_id, '2' %>
-      <h2>Q1: Do you have LED light?</h2>
+      <h2>Q1: Do you have LED lights at home?</h2>
         <p>
           <%= radio_button_tag(:q4, "1") %>
           <%= label_tag(:q4, "No") %>
@@ -83,18 +83,31 @@
           <br>
         </p>
         <br>
-        <h2>Q3: How many times do you re-use the plastic bags shops give you?</h2>
+        <h2>Q3: When you wash dishes do you fill up the sink?</h2>
         <p>
           <%= radio_button_tag(:q6, "1") %>
-          <%= label_tag(:q6, "Once, maybe") %>
+          <%= label_tag(:q6, "No, I have a dishwasher") %>
           <br>
           <%= radio_button_tag(:q6, "2") %>
-          <%= label_tag(:q6, "Several times") %>
+          <%= label_tag(:q6, "No, I let the water go") %>
           <br>
           <%= radio_button_tag(:q6, "3") %>
-          <%= label_tag(:q6, " I never take them; I always use my own bag.") %>
+          <%= label_tag(:q6, "Yes, I do it!") %>
           <br>
         </p>
+				<br>
+				<h2>Q3: Do you have solar panel for your house electricity usage?</h2>
+				<p>
+					<%= radio_button_tag(:q6b, "1") %>
+					<%= label_tag(:q6b, "No, I don't") %>
+					<br>
+					<%= radio_button_tag(:q6b, "2") %>
+					<%= label_tag(:q6b, "No, but I hope I will one day") %>
+					<br>
+					<%= radio_button_tag(:q6b, "3") %>
+					<%= label_tag(:q6b, "Yes, I have it!") %>
+					<br>
+				</p>
           <%= submit_tag "Submit", :id=> 'sub-btn' %>
     <% end %>
   </div>
@@ -133,17 +146,17 @@
           <%= label_tag(:q8, "White vinegar and baking soda is magic!" ) %>
         </p>
         <br>
-        <!-- <h2>Q3: </h2>
+        <h2>Q3: If your a woman: do you buy any scrub product for your body? </h2>
         <p>
-          <%= radio_button_tag(:q9, "1") %>
-          <%= label_tag(:q9, "I don't trust them. One day. Maybe") %>
+          <%= radio_button_tag(:q9, "3") %>
+          <%= label_tag(:q9, "N/A. I'm a man") %>
           <br>
-          <%= radio_button_tag(:q9, "2") %>
-          <%= label_tag(:q9, "What's about it??") %>
+          <%= radio_button_tag(:q9, "1") %>
+          <%= label_tag(:q9, "Yes, I do") %>
           <br>
           <%= radio_button_tag(:q9, "3") %>
-          <%= label_tag(:q9, "They are so cool! I will buy one for sure!") %>
-          <br> -->
+          <%= label_tag(:q9, "No, I use only home-made scrub!") %>
+          <br>
         </p>
           <%= submit_tag "Submit", :id=> 'sub-btn' %>
     <% end %>
@@ -184,13 +197,13 @@
           <%= label_tag(:q11, "I catch a tram" ) %>
         </p>
         <br>
-        <h2>Q3: What do you think about electriv car?</h2>
+        <h2>Q3: What do you think about electric cars?</h2>
         <p>
           <%= radio_button_tag(:q12, "1") %>
           <%= label_tag(:q12, "I don't trust them. One day. Maybe") %>
           <br>
           <%= radio_button_tag(:q12, "2") %>
-          <%= label_tag(:q12, "What's about it??") %>
+          <%= label_tag(:q12, "What's it??") %>
           <br>
           <%= radio_button_tag(:q12, "3") %>
           <%= label_tag(:q12, "They are so cool! I will buy one for sure!") %>
@@ -205,10 +218,3 @@
       <h2>Teach your kids to be green!</h2>
     </div>
   </section>
-
-
-<!-- <div class='suggestions'>
-  What you can do:
-</div> -->
-<!-- <img class='suggestion1 img' src="http://blog.lecobottega.it/wp-content/uploads/2014/03/think-before-you-trash-it-recycle-plastic-bottles.jpg" alt="">
-<img class='suggestion2 img' src="http://3.bp.blogspot.com/-idFHK-Q3yQY/UbCLd6eZCLI/AAAAAAAAAFA/toz9oRBK31I/s1600/click2.jpg"> -->
