@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get '/index', to: 'pages#index'
 
-  get '/users/new', to: 'users#new'
+  get '/users', to: 'users#new'
   post '/users', to: 'users#create'
   delete '/users', to: 'users#destroy'
 

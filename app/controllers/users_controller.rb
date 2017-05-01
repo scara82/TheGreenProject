@@ -9,14 +9,14 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     @user.password = params[:password]
     @user.score = params[:score]
-
+    
     if @user.save
       redirect_to '/'
     else
       redirect_to '/'
     end
   end
-  
+
     def destroy
     end
 end

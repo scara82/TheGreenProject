@@ -1,0 +1,104 @@
+.newAccount{
+  margin: 0 auto;
+  display: grid;
+  width: 250px;
+  height: 250px;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 30px repeat(4, fr);
+  grid-gap: 10px;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  color: rgb(42, 94, 50);
+  font-size: 25px;
+  border: 1px black solid;
+  border-radius: 10px;
+  // padding: 10px;
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 5%;
+}
+
+.signin-title{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  height: 100px;
+  font-size: 60px;
+}
+
+.newName{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.newName-value{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.email{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.email-value{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.password{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.password-value{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+.btn-login{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+.btn-login button{
+  color: #fff;
+  background-color: rgb(66, 152, 92);
+  border: none;
+  width: 80px;
+  height: 20px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.btn-signup{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+
+.btn-signup a{
+  color: rgb(66, 152, 92);
+  font-size: 20px;
+}
+
+input{
+  border-radius: 15px;
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+}
