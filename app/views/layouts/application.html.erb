@@ -20,14 +20,14 @@
 
         <div class='welcome' >
           <% if logged_in? %>
-            <!-- <%= form_tag '/session', method: :delete do %> -->
+            <%= form_tag '/session', method: 'delete' do %>
             <input type="hidden" class="id" data-id= <%= current_user.id %> >
             Welcome,
               <span>
                 <%= current_user.name %>!
               </span>
-            <!-- <% end %> -->
-          <%= link_to "logout", {:controller=> "sessions", :action=> "destroy"}, :class=> 'logout-btn' %>
+            <button class="logout-btn">Logout</button>
+            <% end %>
           <% end %>
         </div>
 
