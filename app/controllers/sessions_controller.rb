@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
   def create
     user  = User.find_by(email: params[:email])
       if user && user.authenticate(params[:password])
+        user.score = "0"
         session[:id] = user.id
         redirect_to '/home'
       else
