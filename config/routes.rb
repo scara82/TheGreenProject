@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get '/session', to: 'session#new'
+  post '/session', to: 'session#create'
+  delete '/session', to: 'session#destroy'
+  
   get '/home', to: 'pages#home'
 
   get '/index', to: 'pages#index'
@@ -7,10 +11,6 @@ Rails.application.routes.draw do
   get '/users', to: 'users#new'
   post '/users', to: 'users#create'
   delete '/users', to: 'users#destroy'
-
-  get '/session', to: 'sessions#new'
-  post '/session', to: 'sessions#create'
-  delete '/session', to: 'sessions#destroy'
 
   post '/tests/self', to: 'tests#self_test_result'
   post '/tests/home', to: 'tests#home_test_result'
