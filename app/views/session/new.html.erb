@@ -1,0 +1,29 @@
+<body class="login-body">
+    <div class="login">
+
+    <div class='email'>
+      <%= form_tag '/session', method: 'post' do %>
+      <label>Email</label>
+    </div>
+    <div class="email-value">
+      <input type="text" name="email" placeholder="username">
+    </div>
+
+    <div class="password">
+      <label for="">Password</label>
+    </div>
+    <div class='password-value'>
+      <input type="password" name="password" placeholder="password">
+    </div>
+
+    <div class="btn-login">
+      <button >Login</button>
+      <% end %>
+    </div>
+
+    <div class='btn-signup'>
+      <a href="/users">Signup</a>
+    </div>
+
+  </div>
+</body>
