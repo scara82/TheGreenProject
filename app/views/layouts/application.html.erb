@@ -19,16 +19,16 @@
         </div>
 
         <div class='welcome' >
-          <% if logged_in? %>
-            <!-- <%= form_tag '/session', method: :delete do %> -->
+          <!-- <% if logged_in? %> -->
+            <!-- <%= form_tag 'session', method: 'delete' do %> -->
             <input type="hidden" class="id" data-id= <%= current_user.id %> >
             Welcome,
               <span>
                 <%= current_user.name %>!
               </span>
-            <!-- <% end %> -->
+            <% end %>
           <%= link_to "logout", {:controller=> "session", :action=> "destroy"}, :class=> 'logout-btn' %>
-          <% end %>
+          <!-- <% end %> -->
         </div>
 
         <div class="home-title">

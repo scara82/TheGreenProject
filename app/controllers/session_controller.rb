@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class SessionController < ApplicationController
   def new
   end
 
@@ -6,15 +6,15 @@ class SessionsController < ApplicationController
     user  = User.find_by(email: params[:email])
       if user && user.authenticate(params[:password])
         user.score = "0"
-        session[:id] = user.id
+        session[:user_id] = user.id
         redirect_to '/home'
       else
-        redirect_to '/'
+        redirect_to '/home'
       end
   end
 
   def destroy
-    session[:id] = nil
-    redirect_to '/'
+    session[:user_id] = nil
+    redirect_to '/home'
   end
 end
