@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'session', to: 'session#new'
-  post 'session', to: 'session#create'
-  delete 'session', to: 'session#destroy'
+  get '/sessions', to: 'sessions#new'
+  post '/sessions', to: 'sessions#create'
+  delete '/sessions', to: 'sessions#destroy'
 
   get '/home', to: 'pages#home'
 
