@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
 
-  get '/sessions', to: 'sessions#new'
-  post '/sessions', to: 'sessions#create'
-  delete '/sessions', to: 'sessions#destroy'
-
   get '/home', to: 'pages#home'
 
   get '/index', to: 'pages#index'
 
-  get '/users', to: 'users#new'
-  post '/users', to: 'users#create'
-  delete '/users', to: 'users#destroy'
+  get  '/signup',  to: 'users#new'
+  post '/signup',  to: 'users#create'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
+
 
   post '/tests/self', to: 'tests#self_test_result'
   post '/tests/home', to: 'tests#home_test_result'

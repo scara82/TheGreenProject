@@ -25,7 +25,7 @@ div.content h2{
 }
 
 div.container h2{
-  color:rgb(217, 28, 45);
+  color:rgb(163, 37, 15);
   font-size: 48px;
   line-height: 600px;
   text-align: center;
@@ -74,20 +74,25 @@ section.module.parallax h1{
 }
 section.module.parallax-1{
   background-image: url(asset-path('nature.jpg'));
+  opacity: .8;
 }
 
 section.module.parallax-2{
   background-image: url(asset-path('pine.jpg'));
+  opacity: .8;
 }
 
 section.module.parallax-3{
   background-image: url(asset-path('dandelion.jpg'));
+  opacity: .8;
 }
 
 section.module.parallax-5{
   background-image: url(asset-path('kids.jpg'));
+  opacity: .8;
 }
 
 section.module.parallax-4{
   background-image: url(asset-path('bicycle.jpg'));
+  opacity: .8;
 }

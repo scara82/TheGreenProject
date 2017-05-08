@@ -17,6 +17,8 @@ body.scores{
   font-family: 'Neucha', cursive;
   color: black;
   font-size: 15px;
+  margin-top: 30px;
+  border-radius: 5%;
 }
 
 .scores-title{
@@ -25,7 +27,6 @@ body.scores{
   grid-row-start: 1;
   grid-row-end: span 1;
   font-size: 20px;
-  // border: 1px solid black;
   padding-top: 10px;
   opacity: 0.5;
   background-color: white;
@@ -89,6 +90,7 @@ body.scores{
   padding-top: 10px;
   opacity: 0.5;
   background-color: white;
+  height: 50px;
 }
 
 .suggestion-img1{
@@ -97,6 +99,7 @@ body.scores{
   grid-row-start: 2;
   grid-row-end: span 4;
   padding-right: 15px;
+  // padding-bottom: 15px;
   width: 100%;
 }
 
@@ -107,13 +110,14 @@ body.scores{
   grid-row-end: span 4;
   padding-left: 15px;
   width: 100%;
+  // padding-bottom: 15px;
 }
 
 .suggestion-img3{
   grid-column-start: 3;
   grid-column-end: span 1;
-  grid-row-start: 4;
-  grid-row-end: span 7;
+  grid-row-start: 6;
+  // grid-row-end: span 7;
   padding-left: 15px;
   width: 100%;
 }
@@ -121,8 +125,8 @@ body.scores{
 .suggestion-img4{
   grid-column-start: 1;
   grid-column-end: span 1;
-  grid-row-start: 4;
-  grid-row-end: span 7;
+  grid-row-start: 6;
+  // grid-row-end: span 7;
   padding-right: 15px;
   width: 100%;
 }

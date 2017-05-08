@@ -3,16 +3,18 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user  = User.find_by(email: params[:email])
-      if user && user.authenticate(params[:password])
-        # user.score = "0"
-        session[:user_id] = user.id
+    user  = User.find_by(email: params[:session][:email].downcase)
+      if user && user.authenticate(params[:session][:password])
+        log_in user
         redirect_to '/home'
+        # user.score = "0"
       else
-        redirect_to '/'
+        render 'new'
       end
   end
 
   def destroy
+    log_out
+    redirect_to root_url
   end
 end

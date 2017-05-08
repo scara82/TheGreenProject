@@ -15,6 +15,7 @@
 <section class="module content">
   <div class='content test'>
     <%= form_tag("/tests/self", method: "post") do %>
+		 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <%=hidden_field_tag :test_id, '1' %>
       <h2>Q1: How many shower a day?</h2>
         <p>

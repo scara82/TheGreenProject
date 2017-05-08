@@ -1,5 +1,8 @@
 body.login-body{
-  background: { image: asset-url("ladybugWithGrass.jpg"); }
+  background: {
+    image: asset-url("ladybugWithGrass.jpg");
+  }
+  opacity: .7;
 }
 
 nav{

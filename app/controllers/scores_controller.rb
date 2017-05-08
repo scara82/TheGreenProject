@@ -16,9 +16,9 @@ class ScoresController < ApplicationController
   end
 
   def your_scores
-    @your_scores_self = Score.where(user_id: session[:id], test_id: "1")
-    @your_scores_house = Score.where(user_id: session[:id], test_id: "2")
-    @your_scores_prod = Score.where(user_id: session[:id], test_id: "3")
-    @your_scores_transp = Score.where(user_id: session[:id], test_id: "4")
+    @your_scores_self = Score.where(user_id: session[:user_id], test_id: "1")
+    @your_scores_house = Score.where(user_id: session[:user_id], test_id: "2")
+    @your_scores_prod = Score.where(user_id: session[:user_id], test_id: "3")
+    @your_scores_transp = Score.where(user_id: session[:user_id], test_id: "4")
   end
 end

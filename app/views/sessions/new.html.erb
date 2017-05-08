@@ -1,29 +1,31 @@
 <body class="login-body">
-    <div class="login">
 
-    <div class='email'>
-      <%= form_tag '/sessions', method: 'post' do %>
-      <label>Email</label>
-    </div>
-    <div class="email-value">
-      <input type="text" name="email" placeholder="username">
+  <div class="login-form">
+
+    <% provide(:title, "Log in") %>
+    <div class="a">
+      <h1 >Log in</h1>
     </div>
 
-    <div class="password">
-      <label for="">Password</label>
-    </div>
-    <div class='password-value'>
-      <input type="password" name="password" placeholder="password">
-    </div>
-
-    <div class="btn-login">
-      <button >Login</button>
+      <%= form_for(:session, url: login_path) do |f| %>
+      <div class='b'>
+        <%= f.label :email %>
+      </div>
+      <div class='c'>
+        <%= f.email_field :email %>
+      </div>
+      <div class='d' >
+        <%= f.label :password %>
+      </div>
+      <div class='e'>
+        <%= f.password_field :password %>
+      </div>
+      <div class="f" >
+        <%= f.submit "Log in"%>
+      </div>
       <% end %>
-    </div>
-
-    <div class='btn-signup'>
-      <a href="/users">Signup</a>
-    </div>
-
+      <div class='g'>
+        New user? <%= link_to "Sign up now!", signup_path %>
+      </div>
   </div>
 </body>
