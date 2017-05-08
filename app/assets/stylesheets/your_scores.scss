@@ -1,110 +1,108 @@
 // Place all the styles related to the point controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body.scores{
-  background-color: rgb(196, 235, 162);
-}
-
-.scores-wrapper{
-  margin: 0 auto;
-  display: grid;
-  height: auto;
-  width: 90%;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 50px repeat(6, 150px) 200px;
-  grid-gap: 5px;
-  text-align: center;
-  font-family: 'Neucha', cursive;
-  color: black;
-  font-size: 15px;
-  margin-top: 30px;
-  border-radius: 5%;
-}
-
-.scores-title{
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5;
-  background-color: white;
-}
-
-.scores-self{
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5;
-  background-color: white;
-}
-
-.scores-house{
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5;
-  background-color: white;
-}
-
-.scores-prod{
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5;
-  background-color: white;
-}
-
-.scores-transp{
-  grid-column: 2 / 3;
-  grid-row: 5 / 6;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5;
-  background-color: white;
-}
-
-.scores-tot{
-  grid-column: 2 / 3;
-  grid-row: 6 / 7;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5;
-  background-color: white;
-  height: 100px;
-}
-
-.suggestion-img1{
-  grid-column: 1 / 2;
-  grid-row: 2 / 6;
-  padding-right: 15px;
-  width: 100%;
-  border-radius: 10%;
-}
-
-.suggestion-img2{
-  grid-column: 3 / 4;
-  grid-row: 2 / 6;
-  padding-left: 15px;
-  width: 100%;
-  border-radius: 10%;
-}
-
-.suggestion-img3{
-  grid-column: 3 / 4 ;
-  grid-row: 4;
-  padding-left: 15px;
-  width: 100%;
-  border-radius: 10%;
-}
-
-.suggestion-img4{
-  grid-column-start: 1;
-  grid-column-end: span 1;
-  grid-row-start: 4;
-  padding-right: 15px;
-  width: 100%;
-  // border-radius: 10%;
-}
+// body.scores{
+// }
+//
+// .scores-wrapper{
+//   margin: 0 auto;
+//   display: grid;
+//   height: auto;
+//   width: 90%;
+//   grid-template-columns: auto auto auto auto;
+//   grid-template-rows: 50px repeat(6, 150px) 200px;
+//   grid-gap: 5px;
+//   text-align: center;
+//   font-family: 'Neucha', cursive;
+//   color: black;
+//   font-size: 15px;
+//   margin-top: 30px;
+//   border-radius: 5%;
+// }
+//
+// .scores-title{
+//   grid-column: 2 / 3;
+//   grid-row: 1 / 2;
+//   font-size: 20px;
+//   padding-top: 10px;
+//   opacity: 0.5;
+//   background-color: white;
+// }
+//
+// .scores-self{
+//   grid-column: 2 / 3;
+//   grid-row: 2 / 3;
+//   font-size: 20px;
+//   padding-top: 10px;
+//   opacity: 0.5;
+//   background-color: white;
+// }
+//
+// .scores-house{
+//   grid-column: 2 / 3;
+//   grid-row: 3 / 4;
+//   font-size: 20px;
+//   padding-top: 10px;
+//   opacity: 0.5;
+//   background-color: white;
+// }
+//
+// .scores-prod{
+//   grid-column: 2 / 3;
+//   grid-row: 4 / 5;
+//   font-size: 20px;
+//   padding-top: 10px;
+//   opacity: 0.5;
+//   background-color: white;}
+//
+// .scores-transp{
+//   grid-column: 2 / 3;
+//   grid-row: 5 / 6;
+//   font-size: 20px;
+//   padding-top: 10px;
+//   opacity: 0.5;
+//   background-color: white;
+// }
+//
+// .scores-tot{
+//   grid-column: 2 / 3;
+//   grid-row: 6 / 7;
+//   font-size: 20px;
+//   padding-top: 10px;
+//   opacity: 0.5;
+//   background-color: white;
+//   height: 100px;
+// }
+//
+// .suggestion-img1{
+//   grid-column: 1 / 2;
+//   grid-row: 2 / 6;
+//   padding-right: 15px;
+//   width: 100%;
+//   border-radius: 10%;
+// }
+//
+// .suggestion-img2{
+//   grid-column: 3 / 4;
+//   grid-row: 2 / 6;
+//   padding-left: 15px;
+//   width: 100%;
+//   border-radius: 10%;
+// }
+//
+// .suggestion-img3{
+//   grid-column: 3 / 4 ;
+//   grid-row: 4;
+//   padding-left: 15px;
+//   width: 100%;
+//   border-radius: 10%;
+// }
+//
+// .suggestion-img4{
+//   grid-column-start: 1;
+//   grid-column-end: span 1;
+//   grid-row-start: 4;
+//   padding-right: 15px;
+//   width: 100%;
+//   // border-radius: 10%;
+// }
