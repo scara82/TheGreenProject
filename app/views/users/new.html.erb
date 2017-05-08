@@ -1,4 +1,4 @@
-<body class="login-body">
+<!-- <body class="login-body">
 
   <div class="newAccount">
 
@@ -39,4 +39,33 @@
     </div>
       </form>
   </div>
-</body>
+</body> -->
+<div class="container-signup">
+  <h1 class="title">Sign up</h1>
+  <form accept-charset="UTF-8" action="/users" class="new_user"
+        id="new_user" method="post">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(@user, url: signup_path) do |f| %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name, class: '' %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email, class: '' %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, class: '' %>
+
+        <%= f.hidden_field :score, value: '0', class: '' %>
+
+
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <br>
+        <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+  </form>
+</div>
