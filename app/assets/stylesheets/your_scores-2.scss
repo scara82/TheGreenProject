@@ -5,12 +5,9 @@
   grid-gap: 10px;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(3, auto);
-  // opacity: 0.7;
-  // border: 1px black solid;
   align-self: center;
   justify-self: center;
   padding: 15px;
-
 }
 
 .scores-title{
@@ -93,7 +90,6 @@
   grid-row: 3 / 4;
   text-align: center;
   align-self: center;
-
 }
 
 img{
