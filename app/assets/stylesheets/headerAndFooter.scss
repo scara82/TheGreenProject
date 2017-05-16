@@ -37,3 +37,10 @@
  font-size: 70px;
  padding-left: 20px;
 }
+
+.footer{
+  position: relative;
+  margin-bottom: 5px; /* negative value of footer height */
+  height: 10px;
+  clear: both;
+}

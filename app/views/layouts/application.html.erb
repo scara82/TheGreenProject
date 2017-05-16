@@ -10,6 +10,7 @@
     <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
   </head>
 
+<div id='container'>
   <body>
     <nav>
       <div class="header-container">
@@ -53,10 +54,13 @@
         </div>
       </div>
     </nav>
-    <%= yield %>
+    <div id='body'>
+      <%= yield %>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <footer>
+    <div id='footer'>
       Created With GrEEn LoVe by Marta S.
-    </footer>
+    </div>
   </body>
+</div>
 </html>
