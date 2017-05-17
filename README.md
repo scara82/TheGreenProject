@@ -6,7 +6,7 @@
  The user san test how his action can impact the environment and get some advise on how to improve it.
 
 ## Technologies Used
-```HTML5``` ```CSS3``` ````JavaScript``` ```jQuery 4.3.1``` ```Ruby 2.3.3``` ```Rails 5.0.2```  ```POSTGREsql``` ```CSS Grid```
+```HTML5``` ```CSS3``` ```JavaScript``` ```jQuery 4.3.1``` ```Ruby 2.3.3``` ```Rails 5.0.2```  ```POSTGREsql``` ```CSS Grid```
 
 ## Features:
 * Log-in and sign-in
