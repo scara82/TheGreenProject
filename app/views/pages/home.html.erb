@@ -16,7 +16,7 @@
     <%= form_tag("/tests/self", method: "post") do %>
 		 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <%=hidden_field_tag :test_id, '1' %>
-      <h2>Q1: How many shower a day?</h2>
+      <h2>Q1: How many shower a day do you have?</h2>
         <p>
           <%= radio_button_tag(:q1, "1") %>
           <%= label_tag(:q1, "Once a day") %>
@@ -30,24 +30,24 @@
         <br>
         <h2>Q2: When you clean your teeth, do you let the water run?</h2>
         <p>
-          <%= radio_button_tag(:q2, "1") %>
-          <%= label_tag(:q2, "Not") %>
-          <br>
           <%= radio_button_tag(:q2, "2") %>
+          <%= label_tag(:q2, "No!") %>
+          <br>
+          <%= radio_button_tag(:q2, "1") %>
           <%= label_tag(:q2, "Yes") %>
           <br>
         </p>
         <br>
-        <h2>Q3: How many times do you re-use the plastic bags shops give you?</h2>
+        <h2>Q3: When you buy a new product:</h2>
         <p>
           <%= radio_button_tag(:q3, "1") %>
-          <%= label_tag(:q3, "Once, maybe") %>
+          <%= label_tag(:q3, "I just check the price") %>
           <br>
           <%= radio_button_tag(:q3, "2") %>
-          <%= label_tag(:q3, "Several times") %>
+          <%= label_tag(:q3, "I have a look at the ingredients (I don't like if there are too many)") %>
           <br>
           <%= radio_button_tag(:q3, "3") %>
-          <%= label_tag(:q3, " I never take them; I always use my own bag.") %>
+          <%= label_tag(:q3, " I always check for the ingredients, it should have only natural ingredients") %>
           <br>
         </p>
           <%= submit_tag "Submit", :id=> 'sub-btn' %>
@@ -57,7 +57,7 @@
 
 <section class='module parallax parallax-2'>
   <div class='container'>
-    <h2>Test how green are your house chores</h2>
+    <h2>Test your house</h2>
   </div>
 </section>
 <section class="module content">
@@ -89,7 +89,7 @@
           <%= label_tag(:q6, "No, I have a dishwasher") %>
           <br>
           <%= radio_button_tag(:q6, "2") %>
-          <%= label_tag(:q6, "No, I let the water go") %>
+          <%= label_tag(:q6, "No, I just let the water go") %>
           <br>
           <%= radio_button_tag(:q6, "3") %>
           <%= label_tag(:q6, "Yes, I do it!") %>
@@ -115,47 +115,59 @@
 
 <section class='module parallax parallax-3'>
   <div class='container'>
-    <h2>Your products</h2>
+    <h2>Test your products</h2>
   </div>
 </section>
 <section class="module content">
   <div class='content test prod'>
     <%= form_tag("/tests/prod", method: "post") do %>
       <%=hidden_field_tag :test_id, '3' %>
-      <h2>Q1: Do you use spray products(deodorant, hairspray,..)?</h2>
+      <h2>Q1: When at the supermarket..</h2>
         <p>
           <%= radio_button_tag(:q7, "1") %>
-          <%= label_tag(:q7, "Yes") %>
+          <%= label_tag(:q7, "I buy only food ready to eat") %>
           <br>
           <%= radio_button_tag(:q7, "2") %>
-          <%= label_tag(:q7, "No") %>
+          <%= label_tag(:q7, "I buy wrapped fresh nice-looking fruits and vegetables") %>
           <br>
           <%= radio_button_tag(:q7, "3") %>
-          <%= label_tag(:q7, "Are you crazy?? Have you ever heard of the Ozone hole??") %>
+          <%= label_tag(:q7, "I put all my fresh items in the basket...who needs another wrap or plastic bag??") %>
         </p>
         <br>
-        <h2>Q2: If you need to disinfect your floor:</h2>
+        <h2>Q2: Do you buy products according to what's local and in season?</h2>
         <p>
           <%= radio_button_tag(:q8, "1") %>
-          <%= label_tag(:q8, "Bleach will kill all the germs!") %>
+          <%= label_tag(:q8, "No, I don't really pay attention. I buy what I feel like to eat") %>
           <br>
           <%= radio_button_tag(:q8, "2") %>
-          <%= label_tag(:q8, "Hot water is a good ally") %>
+          <%= label_tag(:q8, "I try but it isn't always possible") %>
           <br>
           <%= radio_button_tag(:q8, "3") %>
-          <%= label_tag(:q8, "White vinegar and baking soda is magic!" ) %>
+          <%= label_tag(:q8, "Yes, products taste better!" ) %>
         </p>
         <br>
-        <h2>Q3: If your a woman: do you buy any scrub product for your body? </h2>
+        <h2>Q3: Do you have a reusable plastic bottle? </h2>
         <p>
-          <%= radio_button_tag(:q9, "3") %>
-          <%= label_tag(:q9, "N/A. I'm a man") %>
-          <br>
           <%= radio_button_tag(:q9, "1") %>
-          <%= label_tag(:q9, "Yes, I do") %>
+          <%= label_tag(:q9, "No, I can't bother to wash it everyday") %>
+          <br>
+          <%= radio_button_tag(:q9, "2") %>
+          <%= label_tag(:q9, "Yes, I use it everytime at home") %>
           <br>
           <%= radio_button_tag(:q9, "3") %>
-          <%= label_tag(:q9, "No, I use only home-made scrub!") %>
+          <%= label_tag(:q9, "Yes, it is always with me!") %>
+          <br>
+        </p>
+				<h2>Q4: How many times do you re-use the plastic bags shops give you?</h2>
+        <p>
+          <%= radio_button_tag(:q9b, "1") %>
+          <%= label_tag(:q9b, "Once, maybe") %>
+          <br>
+          <%= radio_button_tag(:q9b, "2") %>
+          <%= label_tag(:q9b, "Several times") %>
+          <br>
+          <%= radio_button_tag(:q9b, "3") %>
+          <%= label_tag(:q9b, " I never take them, I always use my own bag") %>
           <br>
         </p>
           <%= submit_tag "Submit", :id=> 'sub-btn' %>

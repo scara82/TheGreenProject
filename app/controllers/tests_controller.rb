@@ -40,7 +40,7 @@ class TestsController < ApplicationController
   def prod_test_result
     @test_prod = Test.new
     @test_prod.user_id = session[:user_id]
-    @test_prod.tot = (params[:q7]).to_i + (params[:q8]).to_i + (params[:q9]).to_i
+    @test_prod.tot = (params[:q7]).to_i + (params[:q8]).to_i + (params[:q9]).to_i + (params[:q9b]).to_i
     @score = Score.new
     @score.test_id = params[:test_id]
     @score.user_id = session[:user_id]
