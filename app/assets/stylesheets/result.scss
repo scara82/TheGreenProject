@@ -5,11 +5,13 @@ h1.result{
 }
 
 img.result{
-  width: 33%;
+  width: 15%;
 }
 
-.result-image{
-  display: table;
-  width: auto;
-  margin: 0 auto;
+#trees{
+  width: 60%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

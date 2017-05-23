@@ -1,3 +1,9 @@
+<script type="text/javascript">
+  $( document ).ready(function() {
+    appendTree();
+});
+</script>
+
 <div>
   <h1 class="result">
     Your earned
@@ -5,22 +11,13 @@
     trees!
   </h1>
 
-<div class='result-image'>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <!-- <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/>
-  <img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0" alt="animated-tree-image-0017"/> -->
-</div>
+<div id="trees"></div>
+
+<script type="text/javascript">
+function appendTree() {
+ for (var i=1; i<= <%= @score.Tot %>; i++) {
+  $('#trees').append('<img class="result" src="http://www.animatedimages.org/data/media/47/animated-tree-image-0017.gif" border="0">');
+ }
+}
+</script>
 </div>

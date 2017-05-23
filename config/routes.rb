@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/home', to: 'pages#home'
 
   get '/index', to: 'pages#index'
+  get '/kids', to: 'pages#kids'
 
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
